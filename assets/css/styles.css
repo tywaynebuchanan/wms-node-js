@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+    --box-shadow: #e9ecef;
+    --grey: #aaaa;
+
+}
+
+
+html{
+    font-family: "Barlow", sans-serif;
+    font-family: "PT Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-family: "PT Sans", sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.box-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px var(--box-shadow);
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.inline{
+    display: inline-block;
+}
+
+.text-light{
+    color:var(--light);
+}
+
+.text-gradient{
+    background: linear-gradient(to right,#8e2de2,#4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header nav{
+    background-color: #06d6a0;
+    padding: 16px;
+    width: 100%;
+}
+
+.main-site{
+    margin-top: 6em;
+    font-family: "Barlow", sans-serif;
+}
+
+.add-user-btn{
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}
+
+.form{
+    margin: 32px 0;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+  padding: 12px;
+  text-align: center;
+  vertical-align: top;
+  border-top: 1px solid var(--border);
+}
+
+a.btn{
+    padding: .3em 1em;
+    margin: 0 .2em;
+    font-size: 1.1em;
+}
+
+.table tr:hover{
+    background-color: #06d6a0;
+    cursor: pointer;
+
+}
+
+.table tr:hover td > a{
+    box-shadow: none;
+}
+
+.table .thead-dark th{
+    color: white;
+    background-color: var(--dark);
+    border-color: #32383e;
+}
+
+//Add User CSS
+
+.form-title{
+    margin-top: .2em;
+
+}
+
+.form-title > h2{
+    padding: .5em 0;
+}
+
+.new_user{
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_user .form-group
+#add_user.form-group{
+    margin: .4em 0;
+}
+
+#update_user input[type=text],input[type=email]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: "Barlow", sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+
+}
+
+
+#add_user input[type=text],input[type=email]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: "Barlow", sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+
+}
+
+
+#update_user input[type=radio]{
+   margin: 1em 2em;
+  
+}
+
+#add_user input[type=radio]{
+    margin: 1em 2em;
+ }
+
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color: #06d6a0;
+    border: none;
+    outline: none;
+    font-family: "PT Sans", sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover{
+    background-color: var(--dark);
+    color: var(--border);
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+    table,thead,tbody,tr,td{
+        display: block;
+    }
+}
